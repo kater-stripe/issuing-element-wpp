@@ -92,7 +92,10 @@ const renderCard = async () => {
   // console.log("ephemeralKey", ephemeralKey);
   const issuing_card = await getIssuingCard(CARD_ID);
 
-  const cardholder_name = `${issuing_card.cardholder.individual.first_name} ${issuing_card.cardholder.individual.last_name}`;
+  // const cardholder_name = `${issuing_card.cardholder.individual.first_name} ${issuing_card.cardholder.individual.last_name}`;
+
+  //Hardcoding for the demo
+  const cardholder_name = "John Doe";
 
   const name = document.getElementById("cardholder-name");
   const number = elements.create("issuingCardNumberDisplay", {

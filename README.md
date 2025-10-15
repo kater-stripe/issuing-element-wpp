@@ -1,10 +1,13 @@
-# Stripe Issuing Elements Demo
+# FinanceHub - Stripe Issuing Elements Demo
 
-A demonstration application showcasing Stripe Issuing Elements with secure virtual card display and Apple/Google Pay wallet integration. This project demonstrates the Stripe Issuing Elements API v2 with beta features.
+A modern financial dashboard showcasing Stripe Issuing Elements with secure virtual card display, Apple/Google Pay wallet integration, and a professional card management interface. This project demonstrates the Stripe Issuing Elements API v2 with beta features.
 
 ## Features
 
+- **Modern Dashboard UI**: Professional finance dashboard with sidebar navigation and responsive layout
 - **Virtual Card Display**: Securely display card details (number, expiry, CVC, PIN) using Stripe Issuing Elements
+- **Card Management**: Real-time card status, available balance display, and action buttons (Freeze Card, Report Lost)
+- **Recent Activity**: Transaction history display with merchant icons and timestamps
 - **Wallet Provisioning**: "Add to Wallet" button for Apple Pay and Google Pay integration
 - **Ephemeral Keys**: Secure card data handling using Stripe's ephemeral key authentication
 - **Modern Stack**: Built with Stripe.js v3, Parcel bundler, and vanilla JavaScript
@@ -58,13 +61,35 @@ npm build
 
 ### File Structure
 
-- **`index.html`** - Main HTML entry point, loads Stripe.js v3 from CDN and bootstraps the application
+- **`index.html`** - Main HTML entry point with full dashboard layout including:
+  - Sidebar navigation with FinanceHub branding
+  - Card status badge and available balance display
+  - Virtual card display with Stripe Elements
+  - Action buttons (Freeze Card, Report Lost)
+  - Recent Activity section with transaction history
+  - Loads Stripe.js v3 from CDN
 - **`src/index.js`** - Core application logic with two primary functions:
   - `renderCard()` (line 58) - Renders card display elements using GA Stripe instance
   - `renderWalletButton()` (line 165) - Renders "Add to Wallet" button using Beta Stripe instance
-- **`src/index.css`** - Card layout and styling with absolute positioning over background image
+- **`src/index.css`** - Modern CSS with design system including:
+  - CSS custom properties (design tokens)
+  - Dashboard layout with flexbox
+  - Sidebar styling with navigation states
+  - Card container with shadows and rounded borders
+  - Activity section and transaction item styles
+  - Responsive breakpoints for mobile
 - **`public/card-back.png`** - Card background image (384px × 244px)
 - **`src/fonts.css`** - Custom font definitions for Elements styling
+
+### UI Components
+
+- **Sidebar Navigation**: Fixed left sidebar with navigation items and user profile
+- **Card Status Badge**: Green "Card Active" indicator with dot icon
+- **Balance Display**: Large available balance amount ($1,284.52)
+- **Virtual Card**: Stripe Issuing card with secure element mounting
+- **Action Buttons**: Rounded buttons for card management actions
+- **Add to Wallet**: Full-width button for Apple/Google Pay provisioning
+- **Recent Activity**: Card-style container showing transaction history
 
 ### Stripe Integration Flow
 
@@ -99,7 +124,19 @@ Both use `STRIPE_SECRET_KEY` directly in the browser, which is acceptable for de
 - **Stripe Issuing Elements API v2** - With beta features enabled
 - **Parcel** - Zero-config bundler with hot module replacement
 - **Vanilla JavaScript** - No framework dependencies
+- **Modern CSS** - CSS custom properties with OKLCH color space
+- **Lucide Icons** - SVG icons for navigation and UI elements
 - **Environment Variables** - Injected at build time via Parcel
+
+## Design System
+
+The application uses a modern design system with:
+- **Color Palette**: OKLCH color space for precise color management
+- **Typography**: System font stack for optimal performance
+- **Spacing**: Consistent 4px/8px grid system
+- **Border Radius**: Variable radius (10px base) for UI elements
+- **Shadows**: Layered shadows for depth and visual hierarchy
+- **Responsive**: Mobile-first approach with breakpoints at 768px
 
 ## Important Notes
 

@@ -118,7 +118,7 @@ This demo uses **two separate Stripe instances** because:
 ### Port Configuration
 The development server uses Parcel's default port selection. To specify a custom port, modify the `start` script in `package.json`:
 ```json
-"start": "parcel index.html --port 3000"
+"start": "parcel index.html --port 8080"
 ```
 
 ## Security Warning

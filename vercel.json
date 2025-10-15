@@ -3,11 +3,5 @@
   "outputDirectory": "dist",
   "devCommand": "npm start",
   "installCommand": "npm install",
-  "framework": null,
-  "env": {
-    "STRIPE_PUBLISHABLE_KEY": "@stripe_publishable_key",
-    "STRIPE_SECRET_KEY": "@stripe_secret_key",
-    "STRIPE_ACCOUNT": "@stripe_account",
-    "CARD_ID": "@card_id"
-  }
+  "framework": null
 }

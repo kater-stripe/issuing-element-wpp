@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Stripe Issuing Card</title>
+    <link href="src/index.css" rel="stylesheet" />
+    <script src="https://js.stripe.com/v3"></script>
+  </head>
+
+  <body>
+    <div id="card-back">
+      <div id="card-details">
+        <div id="cardholder-name"></div>
+        <div id="card-number"></div>
+        <div id="expiry-cvc-wrapper">
+          <div id="expiry-wrapper">
+            <div>EXP</div>
+            <div id="card-expiry"></div>
+          </div>
+          <div id="cvc-wrapper">
+            <div>CVV</div>
+            <div id="card-cvc"></div>
+          </div>
+          <div id="pin-wrapper">
+            <div>PIN</div>
+            <div id="card-pin"></div>
+          </div>
+          <!-- <div id="wallet-wrapper">
+            <div id="add-to-wallet-button"></div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- end card-back div -->
+    <div>
+      <p></p>
+      <div id="wallet-wrapper">
+        <div id="add-to-wallet-button"></div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

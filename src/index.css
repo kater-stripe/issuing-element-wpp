@@ -1,0 +1,61 @@
+#card-back {
+  position: relative;
+  width: 384px;
+  height: 244px;
+  background-image: url("../public/card-back.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#card-details {
+  position: absolute;
+  left: 30;
+  bottom: 30;
+
+  color: white;
+  font-size: 14px;
+  line-height: 24px;
+  font-variant: tabular-nums;
+  letter-spacing: 0rem;
+}
+
+#cardholder-name,
+#card-number,
+#card-expiry,
+#card-cvc {
+  height: 24px;
+}
+
+#card-expiry,
+#card-cvc {
+  width: 50px;
+}
+#card-pin {
+  width: 50px;
+}
+#expiry-cvc-wrapper {
+  display: flex;
+}
+
+#expiry-wrapper,
+#cvc-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#expiry-wrapper {
+  width: 75px;
+}
+
+#pin-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#card-expiry,
+#card-cvc {
+  margin-left: 4px;
+}
+#card-pin {
+  margin-left: 4px;
+}
